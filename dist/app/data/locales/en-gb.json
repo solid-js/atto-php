@@ -1,0 +1,39 @@
+{
+  // --------------------------------------------------------------------------- LOCALE
+  "locale" : {
+    "country": "United Kingdom",
+    "//language" : "English"
+  },
+
+  // --------------------------------------------------------------------------- META
+  "metas" : {
+    "teaser" : {
+      "/" : {
+        "title" : "META TEASER PAGE TITLE EN_GB",
+        "description" : "META TEASER PAGE DESCRIPTION EN_GB"
+      }
+    },
+    "retrospective" : {
+      "/" : {
+        "title" : "META RETROSPECTIVE PAGE TITLE EN_GB",
+        "description" : "META RETROSPECTIVE PAGE DESCRIPTION EN_GB"
+      }
+    },
+    "q" : {
+      "/" : {
+        "title" : "META Q PAGE TITLE EN_GB",
+        "description" : "META Q PAGE DESCRIPTION EN_GB"
+      }
+    },
+    "/q-time-watch-a-story.html" : {
+      "title" : "META ARTICLE TITLE EN_GB",
+      "description" : "META ARTICLE DESCRIPTION EN_GB",
+      "pageType" : "article"
+    }
+  },
+
+  "--2" : "--------------------------------------------------------------------- COMMON",
+  "AppView" : {
+    "custom" : "data..."
+  }
+}

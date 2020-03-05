@@ -1,0 +1,72 @@
+{
+  "locales" : {
+
+    // This will enable multi locale mode
+    // Locale code is
+    "multi" : true,
+
+    // Separator between language and country code :
+    // en_gb or en-gb
+    "separator" : "-",
+
+    // Default locale if not found
+    // Can point to a "no locale" page (like a page to choose locale for example)
+    //"default" : "en-gb",
+    "default" : "choose",
+
+    // Cookie to store user selected locale
+    // Remove it to disable cookie stored locale
+    "cookie" : "_AttoAppLocale"
+  },
+
+  // Path for services
+  // There are no locales code before services endpoint
+  // But locale will be loaded if a get parameter ?locale is given.
+  "services" : "api",
+
+  // Not found route
+  "notFound" : {
+    "template" : "not-found"
+  },
+
+  // Any of those routes will have current locale prepended if in multi locale mode.
+  "routes" : {
+
+    // Home page
+    "/" : {
+      "template" : "home"
+    },
+
+    // All products
+    "/products" : {
+      "controller" : "products",
+      "action" : "overview"
+    },
+
+    // One product
+    "/products/{id}-{name}.html" : {
+      "controller" : "products",
+      "action" : "detail"
+    },
+
+    // Contact page
+    "/contact.html" : {
+      "template" : "contact"
+    },
+
+    // Choose your language page
+    "/choose" : {
+      "template" : "choose",
+      // Available without locale code
+      "locale" : false
+    },
+
+    // Site map
+    "/sitemap.xml" : {
+      "controller" : "sitemap",
+      "action" : "index",
+      // Available without locale code
+      "locale": false
+    }
+  }
+}
